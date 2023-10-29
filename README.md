@@ -20,7 +20,7 @@ Este proyecto es el backend para la aplicación Breadcrumbs Coworking en San Jua
 bash
 git clone https://github.com/tu_usuario/BreadcrumbsBackend-Turnos-Coworking-SanJuan.git
 ```
-1. instalas las dependencias ```npm install```
-2. desplegar servidor ```npm run dev```
+2. instalas las dependencias ```npm install```
+3. desplegar servidor ```npm run dev```
 
-3. Esto iniciará el servidor en el puerto por defecto 4000
+# Esto iniciará el servidor en el puerto por defecto 4000
