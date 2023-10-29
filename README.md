@@ -17,7 +17,6 @@ Este proyecto es el backend para la aplicación Breadcrumbs Coworking en San Jua
 
 1. Clona el repositorio:
 ```
-bash
 git clone https://github.com/tu_usuario/BreadcrumbsBackend-Turnos-Coworking-SanJuan.git
 ```
 2. instalas las dependencias ```npm install```
