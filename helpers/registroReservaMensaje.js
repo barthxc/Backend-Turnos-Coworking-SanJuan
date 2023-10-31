@@ -8,8 +8,8 @@ const registroReservaMensaje = async ({fecha, nombre, telefono}) => {
   const client = twilio(accountSid,authToken);
 
   const mensaje = `SanJuanCoworking\n
-  Hola ${datos.nombre}!\n
-  has hecho una reserva con nosotros en la fecha ${datos.fecha}.\n
+  Hola ${nombre}!\n
+  has hecho una reserva con nosotros en la fecha ${fecha}.\n
   Si no creaste esta reserva, ignora este mensaje`;
 
   client.messages

@@ -37,7 +37,6 @@ const registrarReserva = async (req, res) => {
     // Extraer datos del cuerpo de la solicitud
     const {  id, fecha,  nombre, dni, email, telefono } = req.body;
 
-    console.log('quien es el primero');
 
     try {
 
@@ -58,7 +57,7 @@ const registrarReserva = async (req, res) => {
         })
 
        registroReservaMensaje(req.body); 
-       registroReservaEmail(req.body);
+       //registroReservaEmail(req.body);
 
 
 
