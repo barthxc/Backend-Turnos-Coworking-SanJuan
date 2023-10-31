@@ -109,6 +109,7 @@ const mostrarEstacionYReserva = async (req, res) => {
           nombre: reserva.nombre,
           dni: reserva.dni,
           email: reserva.email,
+          telefono:reserva.telefono,
           fecha: reserva.fecha
         }))
       }
@@ -140,6 +141,7 @@ const mostrarEstacionYReservaPorIdEstacion = async (req, res) => {
         nombre: reserva.nombre,
         dni: reserva.dni,
         email: reserva.email,
+        telefono:reserva.telefono,
         fecha: reserva.fecha
       }))
     };

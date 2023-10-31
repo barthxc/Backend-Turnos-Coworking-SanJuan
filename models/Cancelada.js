@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const reservaSchema = mongoose.Schema({
+const canceladaSchema = mongoose.Schema({
     estacionId: {
         type: mongoose.Schema.Types.ObjectId,  // Tipo de dato: Identificador único
         required: true,  // Campo obligatorio
@@ -28,10 +28,10 @@ const reservaSchema = mongoose.Schema({
     },
     cancelada:{
         type:Boolean,
-        default:false
+        default:true
     }
 });
 
-const Reserva = mongoose.model('reservas', reservaSchema);  // Definición del modelo
+const Cancelada = mongoose.model('canceladas', canceladaSchema);  // Definición del modelo
 
-export default Reserva;  // Exportación del modelo
+export default Cancelada;  // Exportación del modelo

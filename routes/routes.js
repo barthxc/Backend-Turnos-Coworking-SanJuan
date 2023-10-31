@@ -1,7 +1,7 @@
 import express from 'express';
 import { mostrarEstaciones,crearNuevaEstacion, modificarEstacionPorId,eliminarEstacionPorId, mostrarEstacionYReserva, mostrarEstacionYReservaPorIdEstacion  } from '../controllers/estacionController.js';
 import { mostrarReservas, mostrarReservasPorId, registrarReserva,eliminarReserva } from '../controllers/reservaController.js';
-import { registrarLog , mostrarLog} from '../controllers/logController.js';
+import { registrarLog , mostrarLog, agregarMensajeLog} from '../controllers/logController.js';
 const router = express.Router();
 
 // Ruta principal
@@ -23,6 +23,7 @@ router.get('/estaciones-reservas-id/:id', mostrarEstacionYReservaPorIdEstacion);
 //LOGS
 router.get('/log',mostrarLog);
 router.post('/log', registrarLog); //Registrar el Log cuando se hace la reserva
+router.patch('/log/:id', agregarMensajeLog ); //Modifica un Log agregando un mensaje o anotación
 
 
 

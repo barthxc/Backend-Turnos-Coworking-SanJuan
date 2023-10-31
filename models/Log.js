@@ -1,6 +1,11 @@
 import mongoose from "mongoose";
 
 const logSchema = mongoose.Schema({
+    idReserva:{
+        type: mongoose.Schema.Types.ObjectId,
+        requird:true,
+        red:'Reserva'
+    },
     nombreEstacion:{
         type: String,
         required:true,
@@ -29,8 +34,19 @@ const logSchema = mongoose.Schema({
     emailPersona:{
         type:String,
         required:true
+    },
+    telefono:{
+        type:String,
+        required:true
+    },
+    mensaje:{
+        type:String,
+    },
+    cancelada:{
+        type:Boolean,
+        default:false
     }
-
+    
 })
 
 const Log = mongoose.model('logs', logSchema);
