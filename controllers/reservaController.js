@@ -57,7 +57,7 @@ const registrarReserva = async (req, res) => {
         })
 
        registroReservaMensaje(req.body); 
-       //registroReservaEmail(req.body);
+       registroReservaEmail(req.body);
 
 
 
