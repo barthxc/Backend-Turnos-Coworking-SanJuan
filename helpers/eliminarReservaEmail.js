@@ -8,8 +8,8 @@ const eliminarReservaEmail = async ({fecha, nombre, email}) => {
     const info = await sgMail.send({
       to: email,
       from: "pbartgal@myuax.com",
-      subject: 'Reserva realizada',
-      text: 'Reserva realizada',
+      subject: 'Reserva eliminada',
+      text: 'Reserva eliminada',
       html: `
         <h1>Coworking SanJuan</h>
         <p>Hola ${nombre}! se eliminó tu reserva en nuestro Coworking</p><br>
