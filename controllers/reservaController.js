@@ -56,7 +56,7 @@ const registrarReserva = async (req, res) => {
             cancelada:false
         })
 
-       registroReservaMensaje(req.body); 
+       //registroReservaMensaje(req.body); Activar para el día de la entrega
        registroReservaEmail(req.body);
 
 
@@ -80,7 +80,7 @@ const registrarReserva = async (req, res) => {
     try {
       const reservaCancelada = await Reserva.findById(id);
 
-      eliminarReservaMensaje(reservaCancelada);
+      //eliminarReservaMensaje(reservaCancelada);
       eliminarReservaEmail(reservaCancelada);
 
       const reservaEliminar = await Reserva.findByIdAndDelete(id);
