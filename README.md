@@ -12,6 +12,9 @@ Este proyecto es el backend para la aplicación Breadcrumbs Coworking en San Jua
 - *Express.js:* Un framework para Node.js que facilita la creación de servidores web robustos y escalables.
 - *Mongoose:* Una herramienta de modelado de objetos MongoDB para Node.js que proporciona una solución sencilla pero potente para interactuar con una base de datos MongoDB.
 - *Nodemon:* Una utilidad que monitoriza los cambios en los archivos del proyecto y reinicia automáticamente el servidor cuando se detectan cambios.
+- 
+# [FRONTEND](https://github.com/barthxc/Frontend-Turnos-Coworking-SanJuan)
+
 
 ## Instalación
 
